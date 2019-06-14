@@ -5,5 +5,7 @@
 
 PROJECT_NAME := hello-world
 
+CXXFLAGS += -I /Users/dewb/esp/hello_world/main/vendor/link/include -DLINK_PLATFORM_LINUX=1
+
 include $(IDF_PATH)/make/project.mk
 
