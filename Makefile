@@ -4,7 +4,7 @@
 #
 
 PROJECT_NAME := hello-world
-PROJECT_ROOT := $(abspath $(lastword $(MAKEFILE_LIST)))
+PROJECT_ROOT := $(shell dirname $(realpath $(lastword $(MAKEFILE_LIST))))
 
 CXXFLAGS += -I $(PROJECT_ROOT)/main/vendor/link/include -DLINK_PLATFORM_LINUX=1
 
